@@ -26,4 +26,14 @@ router.get("/", async(req, res) => {
     }
 });
 
+router.get("/find/:userId", async(req, res) => {
+    try {
+        const findUser = await User.findById(req.params.userId);
+        res.json(findUser);
+
+    } catch (err) {
+        res.json({ message: err });
+    }
+})
+
 module.exports = router;
