@@ -32,7 +32,7 @@ router.get("/find/:userId", async(req, res) => {
         res.json(findUser);
 
     } catch (err) {
-        res.json({ message: err });
+        res.status(400).send('Error Encountred: ' + err.message);
     }
 })
 
