@@ -3,12 +3,14 @@ const mongoose = require("mongoose");
 const app = express();
 
 const authRoute = require("./routes/user");
+const postsRoute = require("./routes/posts");
 
 //Middlewares
 app.use(express.json());
 
 //Route Middlewares
 app.use("/api/user", authRoute);
+app.use("/api/posts", postsRoute);
 
 require("dotenv/config");
 
