@@ -7,7 +7,7 @@ import Login from "./login";
 
 
 const App = () => {
-var registered =false;
+var registered =true;
 
   return <div>
     <Navbar/>
