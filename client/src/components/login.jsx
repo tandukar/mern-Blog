@@ -20,7 +20,7 @@ const Login=()=>{
         <div>
           <br></br>
           
-          <button type="button" className="button button2">
+          <button type="button" className="button button1">
             Submit
           </button>
         </div>
