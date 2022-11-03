@@ -8,17 +8,17 @@ const Signup = () => {
       <form>
         <label>
           <p>First Name</p>
-          <input type="text" />  
+          <input type="text" />
         </label>
         &emsp;
         <label>
           <p>Last Name</p>
-          <input type="text" /> 
+          <input type="text" />
         </label>
         <br></br>
         <label>
           <p>Email</p>
-          <input type="text"/>
+          <input type="text" />
         </label>
         &emsp;
         <label>
