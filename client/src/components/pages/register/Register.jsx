@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 
 
-function Regsiter(){
+function Register(){
     return(
-        <></>
+        <>
+           <div>
+            <h1>Register</h1>
+        </div></>
     );
 }
 
-export default Regsiter;
+export default Register;
