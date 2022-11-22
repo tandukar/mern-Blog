@@ -4,28 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Login=()=>{
     return (
- <div className="login-wrapper">
-      <form>
-    
-        <label>
-          <p>Email</p>
-          <input type="text" />
-        </label>
-        {/* &ensp;   */}
-        <br></br>
-        <label>
-          <p>Password</p>
-          <input type="password" />
-        </label>
-        <div>
-          <br></br>
-          
-          <button type="button" className="button button1">
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
+      <></>
   );
     
 };
