@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../index.css';
+import "../index.css";
 
 //import index.css
 
@@ -10,23 +10,37 @@ function Register() {
     age: "",
     email: "",
     password: "",
-  });
+  }); 
 
   const { firstname, lastname, age, email, password } = formData;
 
   const onChange = (e) => {
-    setFormData((prevState)=>({   //object ho bhane function ko curly braces ma () halne
+    setFormData((prevState) => ({
+      //object ho bhane function ko curly braces ma () halne
       ...prevState,
       [e.target.name]: e.target.value,
-
     }));
   };
 
-
   const onSubmit = (e) => {
     e.preventDefault();
-  
-    console.log( firstname, lastname,age, email, password);
+
+    console.log(firstname, lastname, age, email, password);
+    // fetch("http://localhost:5000/api/user/register",   {
+    //   method: 'POST',
+    //   body: JSON.stringify({
+    //     firstname,
+    //     lastname,
+    //     age,
+    //     email,
+    //     password,
+    //   }),
+    // })
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     console.log(data, "registered");
+    //   }
+    //   );
   };
 
   return (
@@ -37,7 +51,7 @@ function Register() {
       </section>
 
       <section className="form">
-        <form  onSubmit={onSubmit}> 
+        <form onSubmit={onSubmit}>
           <div className="form-group">
             <input
               type="text"
@@ -94,7 +108,9 @@ function Register() {
             />
           </div>
           <div className="form-group">
-            <button type="submit" className="btn btn-block">Submit</button>
+            <button type="submit" className="btn btn-block">
+              Submit
+            </button>
           </div>
         </form>
       </section>
