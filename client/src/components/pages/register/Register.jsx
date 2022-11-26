@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from 'axios';
 import "../index.css";
 
 //import index.css
@@ -26,21 +27,8 @@ function Register() {
     e.preventDefault();
 
     console.log(firstname, lastname, age, email, password);
-    // fetch("http://localhost:5000/api/user/register",   {
-    //   method: 'POST',
-    //   body: JSON.stringify({
-    //     firstname,
-    //     lastname,
-    //     age,
-    //     email,
-    //     password,
-    //   }),
-    // })
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     console.log(data, "registered");
-    //   }
-    //   );
+    axios.post("http://localhost:5000/api/user/register",formData )
+    .then(res => console.log(res.data))
   };
 
   return (
