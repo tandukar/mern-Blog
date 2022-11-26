@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from 'axios';
 import "../index.css";
 
-//import index.css
+
 
 function Register() {
   const [formData, setFormData] = useState({
