@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
+
+
 import Dashboard from "./components/pages/dashboard/Dashboard";
 import Login from "./components/pages/login/Login";
 import Register from "./components/pages/register/Register";
